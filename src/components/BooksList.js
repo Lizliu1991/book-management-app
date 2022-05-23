@@ -14,7 +14,9 @@ const handleRemove = (id) => {
  <div className='book-list'>
 
         {!_.isEmpty(books) ? (books.map((book) => (
-          <Book key={book.id} {...book} handleRemove={handleRemove}/>
+          <Book key={book.id} {...book} handleRemove={handleRemove}
+            
+          />
         ))) : (<p className='message'>No books available. Please add some books</p>)}
     </div>
 
